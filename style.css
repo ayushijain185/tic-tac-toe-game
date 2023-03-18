@@ -1,0 +1,141 @@
+*{
+    margin: 0vh;
+    padding: 0vh;
+    color: black;
+}
+
+nav{
+    margin: 0px ,5px;
+    background-color: rgb(52, 71, 69);
+    height: 9vh;
+}
+
+nav ul{
+    display: block;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+nav ul li{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(246, 250, 246);
+}
+
+.gamecontainer{
+    /* background-color: rgb(32, 32, 5); */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 70px;
+    position: relative;
+}
+
+.container{
+     display: grid;
+     grid-template-rows: repeat(3,10vw);
+     grid-template-columns: repeat(3,10vw);
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box:hover{
+    background-color: rgb(228, 229, 229);
+    cursor: pointer;
+    
+}
+
+.gameinfo{
+    padding: 0 40px;
+    font-size: 30px;
+    font-family: 'Baloo bhai';
+    color: rgb(52, 71, 69);
+}
+
+.boximg img{
+    width:0px;
+    transition: 1s ease-in-out;
+}
+
+.br-0{
+    border-right : 0;
+}
+.bl-0{
+    border-left : 0;
+}
+.bt-0{
+    border-top : 0;
+}
+.bb-0{
+    border-bottom : 0;
+}
+
+.info{
+    margin: 20px;
+    padding: 5px;
+   }
+
+#reset{
+    margin-top: 23px;
+    margin-left: 20px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 5px 5px;
+}
+
+.line{
+    height: 30vw;
+    width: 0;
+    /* position: absolute; */
+    background-color:rgb(52, 71, 69);
+    transition: width 1s ease-in-out;
+    
+}
+
+@media  screen and (max-width:800px)
+{
+   .gamecontainer{
+    flex-wrap:wrap;
+   }
+   .gameinfo{
+
+    margin-top: 40px;
+   }
+   .info{
+    margin: 20px;
+    padding: 5px;
+    float: left;
+    left:35px;
+   }
+   h1{
+    font-size: 4vh;
+   }
+   .container{
+    grid-template-rows: repeat(3,20vw);
+     grid-template-columns: repeat(3,20vw);
+   }
+   .textbox{
+    font-size: 50px;
+   }
+   .line{
+    display: none;
+   }
+   img{
+    width: 100px;
+   }
+} 
